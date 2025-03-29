@@ -1,38 +1,57 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
   text-align: center;
+  margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.checkin-container, .checkout-container {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 5px;
+  min-width: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.checkin-container h2, .checkout-container h2 {
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.message-box {
+  margin-top: 1rem;
+  color: green;
+}
+
+.checkout-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
 }
